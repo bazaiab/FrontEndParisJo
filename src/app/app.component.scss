@@ -1,0 +1,82 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+button.active {
+    font-weight: 600;
+}
+
+.custom-toolbar {
+    background-color: #ff0000;
+}
+
+.example-container {
+    height: 100vh;
+  }
+  
+  .sidenav {
+    width: 250px;
+    background: #f44336; /* Change this to your preferred color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background: #f44336; /* Darker shade for the header */
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .nav-button {
+    color: white;
+    background: #f44336;
+    border: 1px solid white;
+    transition: background 0.3s;
+  }
+  
+  .nav-button:hover {
+    background: #cd6a62;
+  }
+
+  .mat-mdc-button:not(:disabled){
+    color: white;
+  }
+  
