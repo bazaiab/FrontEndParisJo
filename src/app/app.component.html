@@ -1,71 +1,75 @@
 <div *ngIf="!isCustomerLoggedIn && !isAdminLoggedIn">
-    <mat-sidenav-container class="example-container">
-        <mat-sidenav mode="side" opened class="sidenav">
-          <div class="sidebar-content">
-            <div class="sidebar-header">
-              <h1 class="title">E-Commerce</h1>
-            </div>
-            <div class="sidebar-buttons">
-              <button mat-button class="nav-button" routerLink="/order">Track Order</button>
-              <button mat-button class="nav-button" routerLink="/register">Register</button>
-              <button mat-button class="nav-button" routerLink="/contact-us">Contact Us</button>
-              <button mat-button class="nav-button" routerLink="/login">Login</button>
-            </div>
-          </div>
-        </mat-sidenav>
-        <mat-sidenav-content>
-            <mat-toolbar color="warn" class="navbar"></mat-toolbar>
-          <router-outlet></router-outlet>
-        </mat-sidenav-content>
-      </mat-sidenav-container>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <div class="sidebar-content">
+        <div class="sidebar-header">
+          <h1 class="title">PARIS JO 2024</h1>
+        </div>
+        <div class="sidebar-buttons">
+          <button mat-button class="nav-button" routerLink="/order">Track Order</button>
+          <button mat-button class="nav-button" routerLink="/register">Register</button>
+          <button mat-button class="nav-button" routerLink="/contact-us">Contact Us</button>
+          <button mat-button class="nav-button" routerLink="/login">Login</button>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="warn" class="navbar"></mat-toolbar>
+      <router-outlet>
+        <img src="https://www.coffreo.biz/app/uploads/2023/08/metiers-JO-paris-1024x683.jpeg" alt="Login required" style="width: 100%; height : 90% ; margin: 0 auto; display: block;">
+        <p style="text-align: center; font-size: 1.2em;">Click on login and scroll down</p>
+
+      </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
 <div *ngIf="isAdminLoggedIn">
-    <mat-sidenav-container class="example-container">
-        <mat-sidenav mode="side" opened class="sidenav">
-          <div class="sidebar-content">
-            <div class="sidebar-header">
-              <h1 class="title">E-Commerce</h1>
-            </div>
-            <div class="sidebar-buttons">
-              <button mat-button class="nav-button" routerLink="/admin/dashboard">Dashboard</button>
-              <button mat-button class="nav-button" routerLink="/admin/analytics">Analytics</button>
-              <button mat-button class="nav-button" routerLink="/admin/category">Category</button>
-              <button mat-button class="nav-button" routerLink="/admin/product">Product</button>
-              <button mat-button class="nav-button" routerLink="/admin/orders">Orders</button>
-              <button mat-button class="nav-button" routerLink="/admin/post-coupon">Post Coupon</button>
-              <button mat-button class="nav-button" routerLink="/admin/coupons">Coupons</button>
-              <button mat-button class="nav-button" routerLink="/admin/view-contact-us">Contact Submissions</button>
-              <button mat-button class="nav-button" (click)="logout()">Logout</button>
-            </div>
-          </div>
-        </mat-sidenav>
-        <mat-sidenav-content>
-            <mat-toolbar color="warn" class="navbar"></mat-toolbar>
-          <router-outlet></router-outlet>
-        </mat-sidenav-content>
-      </mat-sidenav-container>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <div class="sidebar-content">
+        <div class="sidebar-header">
+          <h1 class="title">PARIS JO 2024</h1>
+        </div>
+        <div class="sidebar-buttons">
+          <button mat-button class="nav-button" routerLink="/admin/dashboard">Dashboard</button>
+          <button mat-button class="nav-button" routerLink="/admin/analytics">Analytics</button>
+          <button mat-button class="nav-button" routerLink="/admin/category">Category</button>
+          <button mat-button class="nav-button" routerLink="/admin/product">Event</button>
+          <button mat-button class="nav-button" routerLink="/admin/orders">Orders</button>
+          <button mat-button class="nav-button" routerLink="/admin/post-coupon">Post Coupon</button>
+          <button mat-button class="nav-button" routerLink="/admin/coupons">Coupons</button>
+          <button mat-button class="nav-button" routerLink="/admin/view-contact-us">Contact Submissions</button>
+          <button mat-button class="nav-button" (click)="logout()">Logout</button>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="warn" class="navbar"></mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
 <div *ngIf="isCustomerLoggedIn">
-    <mat-sidenav-container class="example-container">
-        <mat-sidenav mode="side" opened class="sidenav">
-          <div class="sidebar-content">
-            <div class="sidebar-header">
-              <h1 class="title">E-Commerce</h1>
-            </div>
-            <div class="sidebar-buttons">
-              <button mat-button class="nav-button" routerLink="/customer/dashboard">Dashboard</button>
-              <button mat-button class="nav-button" routerLink="/customer/cart">Cart</button>
-              <button mat-button class="nav-button" routerLink="/customer/my_orders">Orders</button>
-              <button mat-button class="nav-button" routerLink="/customer/wishlist">Wishlist</button>
-              <button mat-button class="nav-button" routerLink="/customer/profile">Profile</button>
-              <button mat-button class="nav-button" (click)="logout()">Logout</button>
-            </div>
-          </div>
-        </mat-sidenav>
-        <mat-sidenav-content>
-            <mat-toolbar color="warn" class="navbar"></mat-toolbar>
-          <router-outlet></router-outlet>
-        </mat-sidenav-content>
-      </mat-sidenav-container>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <div class="sidebar-content">
+        <div class="sidebar-header">
+          <h1 class="title">PARIS JO 2024</h1>
+        </div>
+        <div class="sidebar-buttons">
+          <button mat-button class="nav-button" routerLink="/customer/dashboard">Dashboard</button>
+          <button mat-button class="nav-button" routerLink="/customer/cart">Cart</button>
+          <button mat-button class="nav-button" routerLink="/customer/my_orders">Orders</button>
+          <button mat-button class="nav-button" routerLink="/customer/wishlist">Wishlist</button>
+          <button mat-button class="nav-button" routerLink="/customer/profile">Profile</button>
+          <button mat-button class="nav-button" (click)="logout()">Logout</button>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="warn" class="navbar"></mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 
 </div>

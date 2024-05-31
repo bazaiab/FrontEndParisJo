@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Add Product</h2>
+    <h2>Add Event</h2>
     <mat-spinner *ngIf="isSpinning"></mat-spinner>
     <form [formGroup]="productForm" (ngSubmit)="addProduct()" [class.spinner-active]="isSpinning">
 
@@ -63,6 +63,6 @@
                 Required!</mat-error>
         </mat-form-field>
 
-        <button mat-raised-button color="warn" type="submit">Add Product</button>
+        <button mat-raised-button color="warn" type="submit">Add Event</button>
     </form>
 </div>

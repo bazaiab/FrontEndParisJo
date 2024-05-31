@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  BASIC_URL: "http://localhost:8080/"
+  BASIC_URL: "http://parisjo2024bazairi.eu-north-1.elasticbeanstalk.com/"
+
 };
 
 /*
